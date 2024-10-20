@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="index.js"></script>
+
+    <style>
+      nav .menu-icon-wrapper {
+        display: flex;
+        justify-content: end;
+      }
+
+      nav .menu {
+        display: none;
+        justify-content: end;
+      }
+
+      nav .menu.active {
+        display: flex;
+      }
+
+      nav .menu > ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pages div {
+        display: none;
+      }
+
+      .pages .default-page {
+        display: block;
+      }
+
+      div > img {
+        width: 30vw;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon-wrapper">
+        <svg
+          width="60px"
+          height="60px"
+          viewBox="0 0 72 72"
+          id="emoji"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="color" />
+          <g id="hair" />
+          <g id="skin" />
+          <g id="skin-shadow" />
+          <g id="line">
+            <line
+              x1="16"
+              x2="56"
+              y1="26"
+              y2="26"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <line
+              x1="16"
+              x2="56"
+              y1="36"
+              y2="36"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+            <line
+              x1="16"
+              x2="56"
+              y1="46"
+              y2="46"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="menu">
+        <ul>
+          <li class="home">Home</li>
+          <li class="about">About</li>
+          <li class="services">Services</li>
+          <li class="contact">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="pages">
+      <div class="default-page">
+        Home Page <img src="./images/home.jpg" alt="" />
+      </div>
+      <div class="about-page">
+        About Page <img src="./images/about.png" alt="" />
+      </div>
+      <div class="services-page">
+        Services Page <img src="./images/services.jpg" alt="" />
+      </div>
+      <div class="contact-page">
+        Content Page <img src="./images/content.jpeg" alt="" />
+      </div>
+    </div>
+  </body>
+  <script>
+    // var menuIcon = document.querySelector(".menu-icon-wrapper");
+    // var menu = document.querySelector(".menu");
+
+    // menuIcon.addEventListener("click", () => {
+    //   menu.classList.toggle("active");
+    // });
+
+    // var home = document.querySelector(".home");
+    // var about = document.querySelector(".about");
+    // var services = document.querySelector(".services");
+    // var contact = document.querySelector(".contact");
+
+    // var homePage = document.querySelector(".default-page");
+    // var aboutPage = document.querySelector(".about-page");
+    // var servicesPage = document.querySelector(".services-page");
+    // var contactPage = document.querySelector(".contact-page");
+
+    // home.addEventListener("click", () => {
+    //   homePage.style.display = "block";
+    //   aboutPage.style.display = "none";
+    //   servicesPage.style.display = "none";
+    //   contactPage.style.display = "none";
+    // });
+
+    // about.addEventListener("click", () => {
+    //   homePage.style.display = "none";
+    //   aboutPage.style.display = "block";
+    //   servicesPage.style.display = "none";
+    //   contactPage.style.display = "none";
+    // });
+
+    // services.addEventListener("click", () => {
+    //   homePage.style.display = "none";
+    //   aboutPage.style.display = "none";
+    //   servicesPage.style.display = "block";
+    //   contactPage.style.display = "none";
+    // });
+
+    // contact.addEventListener("click", () => {
+    //   homePage.style.display = "none";
+    //   aboutPage.style.display = "none";
+    //   servicesPage.style.display = "none";
+    //   contactPage.style.display = "block";
+    // });
+  </script>
+</html>
